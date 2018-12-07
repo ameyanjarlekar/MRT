@@ -86,9 +86,9 @@ while i<225:
 	i = i+1
 	cv2.imshow('im',b)
 #print(np.shape(np.array(testdata)))
-# from keras.models import load_model
-# new_model = load_model('/home/ameya/Desktop/MRT/new_model_num_coluoured.h5')
-# print(new_model.predict(a, batch_size=None, verbose=0, steps=None))
+from keras.models import load_model
+new_model = load_model('/home/ameya/Desktop/MRT/new_model_num_coluoured.h5')
+print(new_model.predict(a, batch_size=None, verbose=0, steps=None))
 #np.save("trailpics.npy", a)
 # b = np.load("trailpics.npy")
 # cv2.waitKey(0)
