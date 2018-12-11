@@ -1,0 +1,15 @@
+1) Using TensorFlow backend.
+Correctly opened resource, starting to show feed.
+2018-12-11 17:30:43.350457: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Traceback (most recent call last):
+  File "abc.py", line 72, in <module>
+    print(finalcode.test(np.load("/home/ameya/Desktop/MRT/current/outputnoball.npy"))) 
+  File "/home/ameya/Desktop/MRT/finalcode.py", line 10, in test
+    b = (new_model.predict(array, batch_size=None, verbose=0, steps=None))
+  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 1149, in predict
+    x, _, _ = self._standardize_user_data(x)
+  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 751, in _standardize_user_data
+    exception_prefix='input')
+  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training_utils.py", line 128, in standardize_input_data
+    'with shape ' + str(data_shape))
+ValueError: Error when checking input: expected conv2d_9_input to have 4 dimensions, but got array with shape (16, 1)
