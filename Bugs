@@ -13,3 +13,5 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/keras/engine/training_utils.py", line 128, in standardize_input_data
     'with shape ' + str(data_shape))
 ValueError: Error when checking input: expected conv2d_9_input to have 4 dimensions, but got array with shape (16, 1)
+
+Comment: Looks like an error in the window making
