@@ -13,7 +13,7 @@ are stored in  	new_model_num_coluoured.h5.
 4) The network was further retrained using a 16,000 odd augmented dataset collected from the image frames of the past videos available of the competition with just the feedforward network weights modified during this process.
  
  Working implementation of the code :
-1) The plan is to make the rover collect images during a 360 degree rotation of itself. This image data is then fed into an    unsupervised algorithm (https://github.com/iitbmartian/Autonomous_Subsystem/tree/master/Ball_Detection/Unsupervised/src) which primarily detects green pastures and creates a cropped image window over these pastures.
+1) The plan is to make the rover collect images during a 360 degree rotation of itself. This image data is then fed into an    unsupervised algorithm (https://github.com/iitbmartian/Autonomous_Subsystem/tree/master/Ball_Detection/Unsupervised/src) which primarily detects green pastures and creates cropped image windows over these pastures.
 2) The files "utils.py","detect_ball.py" create cropped images from the original image at places where a green pasture is observed and convert them into corresponding RGB/greyscale numpy arrays of size 50*50.
 3) These images are then sent to the supervised algo which provides the image with the max probability of getting a ball.
 4) All this is integrated in a single code "turn.py" which outputs the corresponding value of degree with the maximum probability along with the maximum probability.
